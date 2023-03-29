@@ -1,9 +1,10 @@
 function AskPlayerToPlay() {
-    let text = "Do you want to play Rock Paper Scissors";
+    let text = 'Do you want to play "Rock, Paper, Scissors"?';
     if (confirm(text) == true) {
       text = "You pressed OK!";
       return true;
-    } else {
+    } 
+    else {
       text = "You canceled!";
       return false;
     }
@@ -30,39 +31,39 @@ while (true){
     if (generatedChoice === playersChoice)
       {
         ties++;
-        alert("It's a tie!!!"); 
+        alert(`It's a tie!!!\n Computer responded : ${generatedChoice}`); 
       }
     else if (playersChoice=="R")
     {
       if (generatedChoice=="P"){
         losses++;
-        alert("It's a loss!!!"); 
+        alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
       }
       else if (generatedChoice=="S"){
         wins++;
-        alert("It's a win!!!"); 
+        alert(`It's a win!!! \n Computer responded : ${generatedChoice}` ); 
       }
     }
     else  if (playersChoice=="P")
     {
       if (generatedChoice=="R"){
         wins++;
-        alert("It's a win!!!"); 
+        alert(`It's a win!!!  \n Computer responded : ${generatedChoice}`); 
       }
       else if (generatedChoice=="S"){
         losses++;
-        alert("It's a loss!!!"); 
+        alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
       }
     }
     else  if (playersChoice=="S")
     {
       if (generatedChoice=="P"){
         wins++;
-        alert("It's a win!!!"); 
+        alert(`It's a win!!!\n Computer responded : ${generatedChoice}`); 
       }
       else if (generatedChoice=="R"){
         losses++;
-        alert("It's a loss!!!"); 
+        alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
       }
     }
   }
