@@ -30,13 +30,44 @@ while (true){
     if (generatedChoice === playersChoice)
       {
         ties++;
-        alert("It's a tie!!!s"); 
+        alert("It's a tie!!!"); 
       }
-      
-
-
+    else if (playersChoice=="R")
+    {
+      if (generatedChoice=="P"){
+        losses++;
+        alert("It's a loss!!!"); 
+      }
+      else if (generatedChoice=="S"){
+        wins++;
+        alert("It's a win!!!"); 
+      }
+    }
+    else  if (playersChoice=="P")
+    {
+      if (generatedChoice=="R"){
+        wins++;
+        alert("It's a win!!!"); 
+      }
+      else if (generatedChoice=="S"){
+        losses++;
+        alert("It's a loss!!!"); 
+      }
+    }
+    else  if (playersChoice=="S")
+    {
+      if (generatedChoice=="P"){
+        wins++;
+        alert("It's a win!!!"); 
+      }
+      else if (generatedChoice=="R"){
+        losses++;
+        alert("It's a loss!!!"); 
+      }
+    }
   }
   else {
+    alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
     break;
   }
 }
