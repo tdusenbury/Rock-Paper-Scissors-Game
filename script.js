@@ -32,16 +32,19 @@ while (true){
       {
         ties++;
         alert(`It's a tie!!!\n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
     else if (playersChoice=="R")
     {
       if (generatedChoice=="P"){
         losses++;
         alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
       else if (generatedChoice=="S"){
         wins++;
         alert(`It's a win!!! \n Computer responded : ${generatedChoice}` ); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
     }
     else  if (playersChoice=="P")
@@ -49,10 +52,12 @@ while (true){
       if (generatedChoice=="R"){
         wins++;
         alert(`It's a win!!!  \n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
       else if (generatedChoice=="S"){
         losses++;
         alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
     }
     else  if (playersChoice=="S")
@@ -60,10 +65,12 @@ while (true){
       if (generatedChoice=="P"){
         wins++;
         alert(`It's a win!!!\n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
       else if (generatedChoice=="R"){
         losses++;
         alert(`It's a loss!!!\n Computer responded : ${generatedChoice}`); 
+        alert(`game statistics: \n ties:  ${ties} \n wins: ${wins} \n losses: ${losses}`);
       }
     }
   }
