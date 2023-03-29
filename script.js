@@ -11,7 +11,7 @@ function AskPlayerToPlay() {
     document.getElementById("demo").innerHTML = text;
 }
 function askPlayerRPS() {
-  var playersChoice = prompt("Please enter R, P, or S!");
+  var playersChoice = prompt("Please enter R, P, or S!").toUpperCase();
   if (playersChoice!="R" &&  playersChoice!="P" &&  playersChoice!="S") {
     alert("Please enter only  R, P, or S!"); 
   }
